@@ -89,10 +89,12 @@
                   ],
                   "properties": {
                     "filterType": "SqlFilter",
-                    "sqlFilter": {
-                      "sqlExpression": "FilterTag = 'true'",
-                      "requiresPreprocessing": "false"
-                    },
+			"filter": {
+			    "sqlExpression": "FooBar = 'Foo'"
+			},
+			"action": {
+			    "sqlExpression": "set FilterTag = 'true'"
+			},
                     "CorrelationFilter": {}
                   }
                 }
