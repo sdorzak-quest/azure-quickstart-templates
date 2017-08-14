@@ -88,14 +88,12 @@
                     "[parameters('serviceBusSubscriptionName')]"
                   ],
                   "properties": {
-                    "filterType": "SqlFilter",
 			"filter": {
 			    "sqlExpression": "FooBar = 'Foo'"
 			},
 			"action": {
 			    "sqlExpression": "set FilterTag = 'true'"
-			},
-                    "CorrelationFilter": {}
+			}
                   }
                 }
               ]
